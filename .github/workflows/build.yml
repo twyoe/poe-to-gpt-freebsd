@@ -31,9 +31,9 @@ jobs:
             poe-to-gpt/poe-to-gpt
 
     - name: Create release
-      uses: softprops/action-gh-release@master
+      uses: softprops/action-gh-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         tag_name: latest
         files: |
